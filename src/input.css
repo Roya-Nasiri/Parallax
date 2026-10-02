@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Geist", sans-serif;
+  --font-editorial: "Merriweather", serif;
+  
+}
+
+@font-face {
+  font-family: "LightSP";
+  src: url("../fonts/LightSP.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-lightsp: "LightSP", sans-serif;
+}
+body.preview-last main,
+body.preview-last .bac {
+  display: none !important;
+}
+
+body.preview-last .secScroll {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
